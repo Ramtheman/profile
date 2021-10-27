@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300;400;500&display=swap');
+
+body {
+  background-color: black;
+  color: #8ae234;
+  font-family: Inconsolata;
+  cursor: auto;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.align {
+  text-align: center;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.btn {
+  outline: #8ae234;
+  color: #8ae234;
+  outline-style: dashed;
+  margin:10px;
+  padding: 10px;
+  width: 10px;
+  height: 10px
+}
+
+.btn:hover{
+  background-color: #8ae234;
+  color: orange;
+  font-style: bold;
+  outline-style: none;
+}
+
+.image {
+  border-radius: 10%;
+}
+
+.stylised-fa-list {
+  color:#8ae234;
+  font-size: 40px;
+}
+
+.stylised-fa-list:hover {
+  color:orange;
+  font-size: 40px;
+}
+
+.loadbox {
+  position:relative;
+  display: block;
+  line-height:2em;
+  overflow:hidden;
+  /* for demo purpose */
+  margin:0 auto;
+  padding: 0;
+}
+
+.fadingEffect-load {
+  position:absolute;
+  top: 0; bottom:0; right:0;
+  width:100%;
+  background:black;
+  animation-iteration-count: 1;
+}
+
+.fadingEffect-element {
+  position:absolute;
+  top: 0; bottom:0; right:0;
+  width:100%;
+  opacity: 1;
+  background:black;
+  animation-iteration-count: 1;
+}
+
+.headerLoadAnim {
+  animation: showHide 5s ease-in;
+}
+
+.headerAnim{
+  animation: showHide 1s forwards;
+  animation-delay: 2s
+}
+
+.profileLoadAnim {
+  animation: showHide 5s ease-in;
+  animation-delay: 4s
+}
+
+.profileAnim{
+  animation: showHide 1s forwards;
+  animation-delay: 8s;
+}
+
+.linkLoadAnim {
+  animation: showHide 5s ease-in;
+  animation-delay: 10s
+}
+
+.linkAnim{
+  animation: showHide 1s forwards;
+  animation-delay: 12s;
+}
+
+@keyframes showHide {
+  0% {width:100%; opacity: 1; cursor: wait}
+  40% {width:0%; opacity: 1; cursor: wait}
+  60% {width:0%; opacity: 1; cursor: wait}
+  100% {width:0%; opacity: 1; cursor: wait}
+}
