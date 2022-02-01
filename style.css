@@ -13,6 +13,7 @@ body {
 
 .align {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .image-wrapper {
@@ -20,12 +21,21 @@ body {
   justify-content: center;
 }
 
-
 .link-wrapper {
-  display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
+  margin-top: 1rem;
+}
+
+.fa-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  margin: auto;
+}
+
+.fa-box::before {
+  display: none;
 }
 
 .btn {
@@ -35,13 +45,15 @@ body {
   margin:10px;
   padding: 10px;
   width: 10px;
-  height: 10px
+  height: 10px;
+  text-decoration-line: none;
+  transition: 0.2s;
 }
 
 .btn:hover{
   background-color: #8ae234;
   color: orange;
-  font-style: bold;
+  font-weight: bold;
   outline-style: none;
 }
 
@@ -49,12 +61,13 @@ body {
   border-radius: 10%;
 }
 
-.stylised-fa-list {
+.stylised-fa {
   color:#8ae234;
-  font-size: 40px;
+  transition: 0.2s;
+  font-size: 36px;
 }
 
-.stylised-fa-list:hover {
+.stylised-fa:hover {
   color:orange;
   font-size: 40px;
 }
